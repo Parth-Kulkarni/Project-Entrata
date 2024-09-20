@@ -65,11 +65,13 @@ public class entrataHomePage {
 
 	public void userClicksOnSignInButton(){
 
+		Assert.assertEquals(signIn.getText(),"Sign In");
 		this.signIn.click();
 	}
 
 	public void propertyManagerLoginButton(){
 
+		Assert.assertEquals(propertyManagerLogin.getText(),"Property Manager Login");
 		this.propertyManagerLogin.click();
 	}
 
@@ -85,6 +87,7 @@ public class entrataHomePage {
 
 	public void userHitsSignInButton() {
 
+		Assert.assertEquals(submit.getText(),"Sign In");
 		this.submit.click();
 	}
 
@@ -96,6 +99,7 @@ public class entrataHomePage {
 	public void residentialPayClick(){
 			for (WebElement ele : ResidentPay){
 					if(ele.getText().equalsIgnoreCase("ResidentPay")){
+						Assert.assertEquals(ele.getText(),"ResidentPay");
 						ele.click();
 					}
 			}
